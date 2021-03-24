@@ -1,0 +1,412 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<title>Iterative Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="home">
+        <h1 id="headerText"><b>Iterative Design</b></h1>
+    </header>
+
+    <div class="w3-container w3-padding-32" id="projects">
+        <h1 class="desc">Introduction
+        </h1>
+        <p id="intro"> In this group project, my team and I prototyped a mobile app for
+            <a href="https://ocomeals.com/">Oco Meals <i class="fa fa-external-link"></i></a>. Oco Meals delivers prepared meals made by local catering companies in bulk once a week. Being international students, it's hard for us to find fresh home cooked
+            meals and hence, this startup immediately appealed to us.</p>
+    </div>
+
+    <div class="containerInterface">
+
+        <div class="gallery">
+            <h1 class="desc">Sketching and Wireframing
+            </h1>
+
+            <h2 class="desc">Pre-design thinking</b>
+            </h2>
+
+            <p class="section-desc"> The typical users of the business are busy people who do not have time to cook but want to eat healthy food on a budget. This mobile app will help them save their time as they can order from anywhere in several steps and get notified about
+                the delivery easily.</p>
+
+            <h2 class="desc">Sketching</h2>
+
+            <p class="section-desc1"> We explored a wide variety of design alternatives in our sketches before wireframing.
+            </p>
+
+            <div style="max-width: 85%; margin: 0 auto;">
+                <ul style="list-style: square;">
+                    <li class="bullet">Infinite scrolling vs dividing into different pages</li>
+                    <li class="bullet">Bottom navigation vs hamburger menu for easy navigation</li>
+                    <li class="bullet">Hoverable vs clickable elements vs popup in menu gallery page</li>
+                    <li class="bullet">Entering a form vs dragging pin vs using current location to select location</li>
+                    <li class="bullet">Slider vs carousel for business goals after the loader page</li>
+                    <li class="bullet">Scanning a credit card vs entering a form for checkout page</li>
+                    <li class="bullet">+/- buttons vs toggle buttons vs option buttons for choosing number of meals</li>
+                    <li class="bullet">Wheel picker vs expandable dropdowns for choosing time</li>
+                    <li class="bullet">Sorting vs filtering in menu page</li>
+                </ul>
+
+            </div>
+
+            <div class="galleryInterface">
+                <div class="gallery">
+                    <h3 class="desc">Sketch 1</h3>
+                    <img class="img1" src="./images/sc-1.jpg">
+                </div>
+                <div>
+                    <h3 class="desc">Sketch 2</h3>
+                    <img class="img2" src="./images/sc-3.jpg">
+                </div>
+                <div>
+                    <h3 class="desc">Sketch 3</h3>
+                    <img class="img3" src="./images/sc-4.jpg">
+                </div>
+                <div>
+                    <h3 class="desc">Sketch 4</h3>
+                    <img class="img4" src="./images/sc-4.png">
+                </div>
+
+            </div>
+
+            <br>
+
+            <h2 class="desc">Combining Ideas into a Wireframe</h2>
+
+            <h3 class="section-desc">After brainstorming the different sketches, my team and I decided on the following pages to include on the lo-fi prototype</h3>
+
+            <div style="max-width: 85%; margin: 0 auto;">
+                <ul style="list-style: square;">
+                    <li class="bullet">Loader page with Oco Meals Logo</li>
+                    <li class="bullet">Login/Sign-up page for users with goals of the app</li>
+                    <li class="bullet">Hamburger menu with profile, wishlist, local produce and abbout us among others</li>
+                    <li class="bullet">Home page to select the meals per Week</li>
+                    <li class="bullet">Menu page with meal items</li>
+                    <li class="bullet">Filter page in menu items with filter options reflecting goals of Oco Meals (time, money)</li>
+                    <li class="bullet">Delivery page with map</li>
+                    <li class="bullet">Payment through credit card scan</li>
+                </ul>
+
+            </div>
+
+            <h2 class="desc"><a href="https://www.figma.com/file/6vZTcYApU1hq0TMfxCoveC/Iteration-OCO?node-id=14%3A0">Lofi Prototype <i class="fa fa-external-link"></i></a></h2>
+
+            <div class="galleryInterface">
+
+                <iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F6vZTcYApU1hq0TMfxCoveC%2FIteration-OCO%3Fnode-id%3D14%253A0" allowfullscreen></iframe>
+
+
+            </div>
+
+            <div style="margin-bottom: 3vw;"></div>
+            <hr>
+
+            <div class="gallery">
+                <h1 class="desc">Mockups</h1>
+                <p class="section-desc"> After creating the Lo-Fi prototype, we designed an interactive mockup of how we wanted the real app to be. At this time, I was reading about color psychology and came across yellow being the appetizing color. That's when I realized why
+                    Mc Donald's has a yellow logo!</p>
+                <p class="section-desc"> We made the first iteration of the prototype and participated in group peer feedback.</p>
+            </div>
+            <div class="galleryInterface">
+                <h3 class="desc"><a href="https://www.figma.com/proto/6vZTcYApU1hq0TMfxCoveC/Iteration-OCO?node-id=2%3A2&scaling=scale-down">Hi-Fi Prototype (version 1) <i class="fa fa-external-link"></i></a> with critique feedback</h3>
+                <img class="screenshot" src="./images/Critique.png">
+            </div>
+
+            <div>
+                <h4 class="desc">
+
+                    <p class="section-desc">Here are some design choices we made to the prototype after incorporating critique:</p>
+                </h4>
+                <div class="galleryLeft">
+                    <div class="container">
+                        <ul style="max-width: 85%; list-style: square;">
+                            <li class="bullet"><b>Navigation bar:</b> After realizing that the flow of the app was not as intuitive, we created a bottom navigation bar highlighting the main options instead of the hamburger menu to make it easier for users to go to a specific
+                                page with increased focus.
+                            </li>
+                            <li class="bullet"><b>Login:</b> On the login page, we designed a slider with Oco meals' main goals to "hook the users". This was a way we found to transmit the goals of the start up to the customers once they open the app.
+                            </li>
+                            <li class="bullet"><b>Welcome:</b> We added a welcome page which gives a brief overview of the app's functionalities and directs users accordingly.
+                            </li>
+                            <li class="bullet"><b>Favorites:</b> The favorites section allows the user to save his/her/their favorite meals, so that they can easily access them for any week.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="galleryInterface">
+                <!-- <p style="color: #ffffff; font-family: DomaineDisplay, Georgia, serif;
+              font-size: 18px; text-align: center; margin-left: 5rem; margin-right: 5rem;"> We then made some changes to account for the feedback we received during a critique session. The improvements here focused mainly on user flow (trying to make the next steps as intuive as possible), clarifying the startup's goals and improving
+                    features that were confusing according to the users.</p> -->
+                <h3 class="section-title"><a href="https://www.figma.com/proto/6vZTcYApU1hq0TMfxCoveC/Iteration-OCO?node-id=151%3A689&scaling=min-zoom">Hi-Fi Prototype (Revised version) <i class="fa fa-external-link"></i></a></h3>
+
+                <iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6vZTcYApU1hq0TMfxCoveC%2FIteration-OCO%3Fnode-id%3D151%253A664%26scaling%3Dscale-down" allowfullscreen></iframe>
+            </div>
+
+
+            <div>
+                <h4 class="desc">
+
+                    <p class="section-desc">Here are some ways we incorporated the goals of Oco meals:</p>
+                </h4>
+                <div class="galleryLeft">
+                    <div class="container">
+                        <ul style="max-width: 85%; list-style: square;">
+                            <li class="bullet"> On the <b>login page</b>, we display the goals explicitly: save time, save money, save local business, eat healthy, and cancel anytime.
+                            </li>
+                            <li class="bullet">On the <b>menu gallery page</b>, for each food card from local business, we display the category calories as a measure of eating healthy; prep time to save time; price to save money.
+                            </li>
+                            <ul style="list-style: square;">
+                                <li class="bullet">Users can also filter according to Oco meals' goals: time, money, and calories. Filtering would again save time for users.
+                                </li>
+                            </ul>
+                            <li class="bullet">We allow <b>fast delivery</b> using "current location" and <b>fast checkout</b> by "scanning the card"
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="margin-bottom: 3vw;"></div>
+        <hr>
+
+        <div class="gallery">
+            <h1 class="desc">Usability Testing Analysis</h1>
+            <p class="section-desc"> After we made the above changes to our prototype, we also wanted to get feedback from real users so we gave the following task to three different users on
+                <a href="https://www.usertesting.com/">Usertesting.com <i class="fa fa-external-link"></i></a>
+            </p>
+
+            <div class="galleryLeft">
+                <p style="color: #ffffff; font-family: 'Montserrat', sans-serif;
+font-size: 20px; text-align: left; margin-left: 5rem; margin-right: 5rem;"><b>Task:</b> Order a set of meals for the following week as a user who has an account but hasn’t placed an order yet.</p>
+                <p style="color: #ffffff; font-family: 'Montserrat', sans-serif;
+font-size: 20px; text-align: left; margin-left: 5rem; margin-right: 5rem;"><b>Why this task:</b> Our two users would either be returning users or first time users. First time users would start from scratch and returning users would have the option to edit their previously saved meal plan. We tasked the users
+                    to start from scratch <b>and</b> edit their order thereby covering all functionality.</p>
+            </div>
+
+            <h2 class="desc">Instructions</h2>
+
+            <div class="galleryLeft">
+                <div class="container">
+                    <ol style="max-width: 85%; line-height: 200%;">
+                        <li class="bullet">Assume you already have an account and sign in.
+                        </li>
+                        <li class="bullet">Let’s explore what other meals Oco meals has to provide.</li>
+                        <ol style="max-width: 85%; list-style-type: lower-latin;">
+                            <li class="bullet">Filter the items to be Vegetarian and their prep time to be 10 mins.
+                            </li>
+                            <li class="bullet">Add an item in the ‘Favorites’.
+                            </li>
+                        </ol>
+                        <li class="bullet">Let's start your order
+                        </li>
+                        <ol style="max-width: 85%; list-style-type: lower-latin;">
+                            <li class="bullet">Choose number of meals as 5/week and confirm.
+                            </li>
+                        </ol>
+                        <li class="bullet">
+                            8AM on Sunday works great for you and the address is right so you go to the next page.
+                        </li>
+                        <li class="bullet">Take a picture to scan the card and proceed to payment.
+                        </li>
+                        <li class="bullet">You see that you don’t quite like the meal items for the week. Shuffle the items.
+                        </li>
+                        <li class="bullet">You like the items you shuffled. Edit the delivery date to Monday.
+                        </li>
+                        <ol style="max-width: 85%; list-style-type: lower-latin;">
+                            <li class="bullet">Also choose 11:00PM as your delivery time. Go to the next page.
+                            </li>
+                        </ol>
+                        <li class="bullet">You’re back on the summary page and satisfied and want to pay with the card you’ve already saved. Press confirm.
+                        </li>
+                        <li class="bullet">Go back home.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <h2 class="desc">User Testing GIFs</h2>
+
+            <div class="galleryInterface">
+                <div class="gallery-item"><img src="./images/video1.gif"></div>
+                <div class="gallery-item"><img src="./images/video2.gif"></div>
+                <div class="gallery-item"><img src="./images/video3.gif"></div>
+
+            </div>
+
+            <h2 class="desc">Post Test Questions</h2>
+
+            <div class="galleryLeft">
+                <p class="section-desc"> We also included some post test questions for the users to answer after they finished testing the prototype </p>
+                <!-- <div class="container">
+                    <ol style="max-width: 85%; list-style-type: none;">
+                        <li>
+                            <p class="bullet">
+                            </p>
+                        </li>
+                        <li>
+                            <p class="bullet"></p>
+                        </li>
+                        <li>
+                            <p class="bullet"> </p>
+                        </li>
+                        <li>
+                            <p class="bullet"></p>
+                        </li>
+                    </ol>
+                </div> -->
+            </div>
+
+            <div class="galleryLeft">
+                <div class="container">
+                    <ol style="max-width: 85%;">
+
+                        <li class="bullet">Was there any step in the task that you found difficult or unintuitive to complete?</li>
+
+                        <ul style="list-style: square;">
+                            <li class="bullet">All users found the task easy to complete and the app easy to navigate.</li>
+                        </ul>
+                        <li class="bullet">What would you say are some of the goals this startup is trying to accomplish?</li>
+
+                        <ul style="list-style: square;">
+                            <li class="bullet">Users recognized the goals of saving money, time and eating healthy. However, they did not identify the goals of saving local businesses and cancel anytime.</li>
+                        </ul>
+                        <li class="bullet">Would you change anything about this app’s design or interaction? If yes, can you elaborate?</li>
+
+                        <ul style="list-style: square;">
+                            <li class="bullet">Users would've appreciated more information about the food, especially in the menu and summary page.</li>
+                        </ul>
+                        <li class="bullet">Did the task take more time than you had expected?</li>
+
+                        <ul style="list-style: square;">
+                            <li class="bullet">Users found the tasks easy and fast.</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+            <h2 class="desc">User Performance</h2>
+            <p class="section-desc">There were some features we were expecting to work and some not. The results more or less aligned with our anticipation.</p>
+            <div class="galleryInterface">
+                <img class="img-adobe" src="./images/userPerformance.png">
+            </div>
+            <div style="margin-bottom: 3vw;"></div>
+            <hr>
+
+            <h1 class="desc">Potential Changes to our prototype</h1>
+            <p class="section-desc"> After some insightful feedback from user testing, we came up with a few changes we would make to our app. </p>
+            <div class="container">
+
+                <div class="galleryLeft">
+                    <div class="galleryInterface">
+                        <ol style="max-width: 85%;">
+                            <li class="bullet"> Increase focus on food w.r.t to specific calories, ingredients, and bigger images on Menu page and Summary page.
+
+                            </li>
+                            <li class="bullet">Highlight local businesses futher by providing a menu sort/filter option by any listed local business
+                            </li>
+                            <li class="bullet">Add a save button in filter page to save your selections</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="container">
+                <h2 class="section-title ">Skills</h2>
+                <div class="row">
+                    <div class="column">
+                        <h2 class="section-desc"><b>Soft Skills</b></h2>
+                        <ul style="list-style: none; margin-left: 10vw; ">
+                            <ul style="list-style: square; max-width: 85%; ">
+                                <li>
+                                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Teamwork</p>
+                                </li>
+
+                                <li>
+                                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Collaboration</p>
+                                </li>
+
+                                <li>
+                                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Decision Making</p>
+                                </li>
+
+                                <li>
+                                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Leadership</p>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h2 class="section-desc"><b>Hard Skills</b></h2>
+                        <ul style="list-style: none; margin-left: 10vw; ">
+                            <ul style="list-style: square; max-width: 85%; ">
+                                <li>
+                                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">UX Research</p>
+                                </li>
+
+                                <li>
+                                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">User Testing</p>
+                                </li>
+
+                                <li>
+                                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Wireframing</p>
+                                </li>
+
+                                <li>
+                                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Lofi & Hifi Prototyping</p>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <h1 class="desc">Conclusion</h1>
+            <p class="section-desc">It was an interesting experience to see how differently each of my team members perceived the startup's goals. Collaboration in the project made it more effective (and fun!) as we explored various design alternatives.</p>
+            <p class="section-desc"> We contacted Oco Meals to show them our prototype and were super excited to hear back from them!</p>
+            <div class="galleryInterface">
+                <img class="email" src="./images/email.png">
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div style="margin-bottom: 5vw;"></div>
+    <div>
+        <div class="row">
+            <div style="width: 50%;float: left;">
+                <a href="https://tranquil-waters-67443.herokuapp.com/">
+                    <h1 class="section-title"><b>Prev: </b>Responsive Redesign</h2>
+                </a>
+            </div>
+            <div style="width: 50%;float: right;">
+                <a href="https://boiling-beyond-53320.herokuapp.com/">
+                    <h1 class="section-title"><b>Next: </b>Hyperlink</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
