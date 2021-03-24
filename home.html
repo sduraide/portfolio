@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<title>Final Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="uiux()">
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <div class="topnav" id="myTopnav">
+        <a href="#header-text">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function uiux() {
+            document.getElementById("project4").style.display = "none";
+            document.getElementById("project5").style.display = "none";
+            document.getElementById("project1").style.display = "flex";
+            document.getElementById("project2").style.display = "flex";
+            document.getElementById("project3").style.display = "flex";
+            // document.getElementById("project6").style.display = "flex";
+            document.getElementById("uiux").style.backgroundColor = "#1e1e1e";
+            document.getElementById("uiuxText").style.color = "white";
+            document.getElementById("gd").style.backgroundColor = "white";
+            document.getElementById("gdText").style.color = "#1e1e1e";
+        }
+
+        function gd() {
+            document.getElementById("project1").style.display = "none";
+            document.getElementById("project2").style.display = "none";
+            document.getElementById("project3").style.display = "none";
+            // document.getElementById("project6").style.display = "none";
+            document.getElementById("project4").style.display = "flex";
+            document.getElementById("project5").style.display = "flex";
+            document.getElementById("uiux").style.backgroundColor = "white";
+            document.getElementById("uiuxText").style.color = "#1e1e1e";
+            document.getElementById("gd").style.backgroundColor = "#1e1e1e";
+            document.getElementById("gdText").style.color = "white";
+        }
+    </script>
+
+    <div id="header-text">
+        <h1 class="header-text">Welcome to my Portfolio</h1>
+    </div>
+
+    <hr>
+    <div id="about">
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2 id="about-me-title" style="font-family: 'Montserrat', sans-serif;
+                font-size: 3vw;">About Me</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6"> <img src="images/user.jpg" class="img-responsive" alt=""> </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="about-text">
+                        <p class="about-me" style="line-height: 150%;">Hello! I'm Shenandoah and I'm from Bangalore, India! I'm a junior in Brown University studying Computer Science. I'm particularly interested in design having taken UIUX and Graphic Design courses in Brown and RISD.</p>
+                        <p class="about-me" style="line-height: 150%;">For my summer internship, I worked in IBM as a front-end engineer for the first time. It was love at first sight! My project was the only one in the team to have zero errors in React Native!</p>
+                        <p class="about-me" style="line-height: 150%;">I also enjoy exploring different aspects of design in Theatre Set Design, VR Research, and DAW Music Production.</p>
+                        <div class="zoom">
+                            <a href="./resume.pdf" download="[name]_resume" class="download">Download Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="contain" id="projects">
+        <h2 style="font-family: 'Montserrat', sans-serif;
+                font-size: 3vw;">Projects</h2>
+    </div>
+
+    <div class="filter">
+        <div>
+            <button id="uiux" onclick="uiux()" style="margin-right: 50px;"><span id="uiuxText" class="buttons">UIUX</span></button>
+            <button id="gd" onclick="gd()"><span id="gdText" class="buttons">Graphic Design</span></button>
+        </div>
+    </div>
+
+    <div id="contain">
+        <div class="contain">
+            <div class="project" id="project1" onclick="window.open('https://nameless-stream-46518.herokuapp.com/');" style="cursor: pointer;">
+                <div>
+                    <p class="project-name">Personas and Storyboarding</p>
+                    <p class="project-desc">UIUX class project where I observed and interviewed DLSR users, created personas based on the interviewees, and illustrated a storyboard.</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="./images/personas.png">
+                </div>
+
+            </div>
+
+            <div class="project" id="project2" onclick="window.open('https://tranquil-waters-67443.herokuapp.com/');" style="cursor: pointer;">
+                <div>
+                    <p class="project-name">Responsive Redesign</p>
+                    <p class="project-desc">UIUX class project where I identified usability and accessibility problems with a website, and redesigned the website using design thinking.</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="./images/responsive.png">
+                </div>
+
+            </div>
+
+            <div class="project" id="project3" onclick="window.open('https://stark-temple-86636.herokuapp.com/');" style="cursor: pointer;">
+                <div>
+                    <p class="project-name">Iterative Design</p>
+                    <p class="project-desc">UIUX class project where I designed an interface for a startup called Oco Meals by only considering their description and goals, without looking at their website.</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="./images/iterative.png">
+                </div>
+
+            </div>
+
+            <div class="project" id="project4" onclick="window.open('https://boiling-beyond-53320.herokuapp.com/');" style="cursor: pointer;">
+                <div>
+                    <p class="project-name">Hyperlink</p>
+                    <p class="project-desc">Graphic Design class project in RISD to learn how to effectively use hyperlinks while making a website</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="./images/hyperlink.png">
+                </div>
+
+            </div>
+
+            <div class="project" id="project5" onclick="window.open('https://evening-eyrie-65024.herokuapp.com/');" style="cursor: pointer;">
+                <div>
+                    <p class="project-name">Input/Output</p>
+                    <p class="project-desc">Graphic Design class project in RISD to learn how to effectively make use of dynamic content output on a website</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="./images/io.jpg">
+                </div>
+
+            </div>
+
+            <!-- <div class="project" id="project6" onclick="window.open('https://infinite-taiga-76555.herokuapp.com/');" style="cursor: pointer;">
+                <div>
+                    <p class="project-name">Development in React</p>
+                    <p class="project-desc">UIUX class project to help me understand front-end with React better by making a shopping application until checkout.</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="./images/development.png">
+                </div>
+
+            </div> -->
+
+            <div class="project" id="project7" onclick="" style="cursor: pointer;">
+                <div>
+                    <p class="project-name">Fun Design Projects</p>
+                    <p class="project-name">Coming soon...</p>
+                    <p class="project-desc">Theatre Set Design, VR research, and DAW Music Production.</p>
+                </div>
+
+                <div>
+                    <img class="project-image" src="./images/fun.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div style="margin-bottom: 5vw;"></div>
+
+</body>
+
+</html>
