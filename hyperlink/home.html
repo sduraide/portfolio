@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<title>Hyperlink</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="headerText"><b>Hyperlink</b></h1>
+    <div class="w3-container w3-padding-32" id="projects">
+        <h1 class="section-title">Introduction</h1>
+        <p class="section-desc">Hyperlinks are the essence of web. For a user experience, designers need to create a hyperlink structure that allows various kinds of browsing content. Based on how the contents are parsed and connected to each other via hyperlinks, a designer
+            can create a new reading of the content. In this project, I explored how we can use hyperlinks to catalogue items in a creative way.</p>
+    </div>
+
+
+    <div>
+        <h1 class="section-title">Catalog content</h1>
+        <h2 class="section-desc">When I visited Dubai, I was craving for chocolates which to this day I'm not sure why. That was my first time tasting Pierre Marcolini's work, who is a belgian chocolatier. I've been following his work since and decided to catalogue his work for
+            my project. I wanted to include images of his work, videos of him and some of his recipes.</h2>
+        <h2 class="section-desc">Here's a taste of what I initially planned on including.</h2>
+        <div class="containerInterface">
+            <div class="container">
+
+                <div class="gallery">
+                    <img src="images/collection1.png" alt="Tablet" class="gallery-item">
+                </div>
+
+                <div class="gallery">
+                    <img src="./images/collection2.png" alt="Mobile>" class="gallery-item">
+                </div>
+
+                <div class="gallery">
+                    <img src="./images/collection3.png" alt="Mobile>" class="gallery-item">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-desc">I was browsing through his Youtube channel and came across videos documenting his process of making different chocolates for different occasions.</h2>
+        <div class="container">
+
+            <div class="gallery">
+                <iframe class="gallery-item1" src="https://www.youtube.com/embed/MVfmOK-yKDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="gallery">
+                <iframe class="gallery-item1" src="https://www.youtube.com/embed/tUokyT5er40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
+            <div class="gallery">
+                <iframe class="gallery-item1" src="https://www.youtube.com/embed/qKkzAjo8sVM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <h2 class="section-desc">I also came across <a href="https://www.dropbox.com/sh/sv1jtdq2lmiors1/AACPQL9LkWkr2dV3xJVB4XPca?dl=0&preview=Pierre+Marcolini+Recipies.docx">his recipes <i class="fa fa-external-link"></i></a> and thought it would be nice to share it for the
+            brave ones ready to bake along with <a href="https://eu.marcolini.com/en/">his shop <i class="fa fa-external-link"></i></a>!
+        </h2>
+
+    </div>
+
+    <hr>
+
+    <div>
+        <h1 class="section-title">Lofi Prototyping with Wireframes</h1>
+        <h2 class="section-desc">I started off by brainstorming how I wanted my layout to look like in the form of wireframes.</h2>
+        <h2 class="section-desc">The following website layout presents all section in one long page. While scrolling, the navbar would be fixed and the users can skip sections by clicking on the header link if they want to. They can click on images to show the text about it.
+            There would be three different sections: Gallery (to view images of his work), Production (to view videos of chocolate production), and Shop (to shop from his website).</h2>
+
+        <div class="containerInterface">
+            <div class="container">
+
+                <div class="gallery">
+                    <img src="images/wireframe1.png" alt="Tablet" class="gallery-item">
+                </div>
+
+                <div class="gallery">
+                    <img src="./images/wireframe2.png" alt="Mobile>" class="gallery-item">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-desc">The below series of wireframes describe a two column layout where the first column would have a stationary image of Pierre Marcolini with his chocolates. The second column is where all the text would go. There are four sections: About (to view
+            information about Pierre Marcolini and his work), History (to view videos of his career), Manufacturing (to view videos of chocolate manufacturing), and Gallery (to view images of his work).</h2>
+
+        <div class="containerInterface">
+            <div class="container">
+
+                <div class="gallery">
+                    <img src="images/wireframe3.png" alt="Tablet" class="gallery-item1">
+                </div>
+
+                <div class="gallery">
+                    <img src="./images/wireframe4.png" alt="Mobile" class="gallery-item1">
+                </div>
+
+                <div class="gallery">
+                    <img src="images/wireframe5.png" alt="Tablet" class="gallery-item1">
+                </div>
+
+                <div class="gallery">
+                    <img src="./images/wireframe6.png" alt="Mobile>" class="gallery-item1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1 class="section-title">Hifi Prototyping</h1>
+        <h2 class="section-desc">After getting feedback on my wireframe to have more context, specificity and purpose for the website, I started to rethink my goal for the project and asked myself why Pierre Marcolini is special to me. I realized that eating his chocolates during
+            different festivals was what made it memorable!</h2>
+
+        <div class="container">
+            <div class="gallery">
+                <h2 class="desc"><a href="https://www.figma.com/file/ZwUok9h5patGm8O9ii8omp/GD2?node-id=179%3A2">Initial Prototype with Feedback <i class="fa fa-external-link"></i></a></h2>
+                <!-- <iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFDUmTXgw4nM9WsyFj7hBOr%2FDesktop%3Fnode-id%3D1%253A2%26scaling%3Dscale-down" allowfullscreen></iframe> -->
+                <iframe class="figma" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZwUok9h5patGm8O9ii8omp%2FGD2%3Fnode-id%3D173%253A2%26scaling%3Dscale-down" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1 class="section-title">
+            <a href="https://sduraide.github.io/gdfwf20/projects/p2-hyperlinked-set/index.html">Final Website <i class="fa fa-external-link"></i></a></h1>
+        <h2 class="section-desc">Here's my final website for the project embedded for easy access. Following the feedback, I changed my typography and used many CSS animations. After I learned how to make websites responsive in my UIUX class, I made the following website responsive
+            too.
+        </h2>
+    </div>
+
+    <div class="container">
+        <embed type="text/html" class="html" src="https://sduraide.github.io/gdfwf20/projects/p2-hyperlinked-set/index.html">
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2 class="section-title ">Skills</h2>
+        <div class="row">
+            <div class="column">
+                <h2 class="section-desc"><b>Soft Skills</b></h2>
+                <ul style="list-style: none; margin-left: 10vw; ">
+                    <ul style="list-style: square; max-width: 85%; ">
+                        <li>
+                            <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Studio Critic</p>
+                        </li>
+
+                        <li>
+                            <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Coordination</p>
+                        </li>
+
+                        <li>
+                            <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Adaptability</p>
+                        </li>
+
+                    </ul>
+                </ul>
+            </div>
+            <div class="column">
+                <h2 class="section-desc"><b>Hard Skills</b></h2>
+                <ul style="list-style: none; margin-left: 10vw; ">
+                    <ul style="list-style: square; max-width: 85%; ">
+                        <li>
+                            <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Wireframing</p>
+                        </li>
+
+                        <li>
+                            <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Figma</p>
+                        </li>
+
+                        <li>
+                            <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Graphic Design</p>
+                        </li>
+                        <li>
+                            <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Typography</p>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1 class="section-title">Potential changes to Website</h1>
+        <h2 class="section-desc">Here are some of the changes I'd make with extra time and additional revision on my work.</h2>
+        <ul style="list-style: none; margin-left: 10vw; ">
+            <ul style="list-style: square; max-width: 85%; ">
+                <li>
+                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Resize the height of the Christmas Tree to make it more responsive</p>
+                </li>
+
+                <li>
+                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Make the colors consistent through different browsers</p>
+                </li>
+
+                <li>
+                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Incorporate a hover feature for dropdown on laptop</p>
+                </li>
+
+                <li>
+                    <p style="color: #ffffff; font-family: Montserrat, sans-serif; font-size: 1em; text-align: left; ">Add a pause button for music with autoplay for all browsers</p>
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+    <hr>
+
+
+    <div>
+        <h1 class="section-title">Conclusion</h1>
+        <h2 class="section-desc">Hyperlink project made me go back to times where I could travel. This is the project where I deviated the most from my original sketches but still ended up satisfied. It helped me understand how something as trivial as links can make or break
+            a website. This was my first exposure to typography before which I just chose fonts randomly. </h2>
+        <h2 class="section-desc">Here are the different types of hyperlinks I used in my project:</h2>
+        <div class="container">
+            <ol style="max-width: 85%;">
+                <li>
+                    <p class="bullet">Text links to different pages on header and body</p>
+                </li>
+                <li>
+                    <p class="bullet">Image links to different pages and external websites in the body</p>
+                </li>
+                <li>
+                    <p class="bullet">Iframe embedded links from youtube</p>
+                </li>
+                <li>
+                    <p class="bullet">Dropdown on click</p>
+                </li>
+                <li>
+                    <p class="bullet">Link to play audio in the recipes</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div style="margin: 50px;">
+
+    </div>
+
+    <div>
+        <div class="row">
+            <div style="width: 50%;float: left;">
+                <a href="https://stark-temple-86636.herokuapp.com/">
+                    <h1 class="section-title"><b>Prev: </b>Iterative Design</h2>
+                </a>
+            </div>
+            <div style="width: 50%;float: right;">
+                <a href="https://evening-eyrie-65024.herokuapp.com/">
+                    <h1 class="section-title"><b>Next: </b>I/O</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
