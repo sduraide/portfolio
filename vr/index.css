@@ -1,0 +1,512 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: #1e1e1e;
+}
+
+.container {
+    max-width: 1125px;
+    margin: 0 auto;
+    display: flex;
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerInterface {
+    max-width: 1125px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#header-background {
+    position: absolute;
+    max-height: 8em;
+    z-index: -1;
+    border-radius: 10%;
+    opacity: 0.25;
+    overflow: hidden;
+}
+
+h1#header-text {
+    position: relative;
+    top: 0;
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    padding-top: 4vw;
+    padding-bottom: 1vw;
+    margin-top: 0px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.galleryInterface {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.galleryLeft {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.gallery-item {
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    text-decoration: none;
+    outline-color: #eee;
+}
+
+.gallery-itemLeft {
+    margin: 10px;
+}
+
+.gallery-item img {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+}
+
+.text-wrapper {
+    position: relative;
+    width: 330px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #eee;
+    font-weight: 400;
+    font-family: DomaineDisplay, Georgia, serif;
+    transition: all 0.1s ease-in 0s;
+    opacity: 0;
+}
+
+.intro {
+    color: #eee;
+    font-weight: 400;
+    font-family: DomaineDisplay, Georgia, serif;
+    font-size: 3vw;
+    margin-bottom: 0vw;
+    margin-right: 0vw;
+}
+
+.text-wrapper:hover {
+    transition: all 0.8s ease;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 1;
+}
+
+.name {
+    font-size: 1.5em;
+}
+
+ol li::before {
+    content: counter(my-awesome-counter);
+    color: black;
+    font-size: 1.0rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    background: #999;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #999;
+}
+
+.desc {
+    color: #fff;
+    font-family: DomaineDisplay, Georgia, serif;
+    text-align: center;
+}
+
+hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #777;
+    width: 100%;
+    background-color: transparent;
+}
+
+h3 {
+    margin: 2vw;
+    padding: 5px;
+}
+
+.noBackground {
+    background-color: #1e1e1e;
+}
+
+
+/* Because there is no hover on a touch devide, we need to move the text to the bottom of the image and display it by default */
+
+@media only screen and (max-width: 1024px) {
+    .text-wrapper {
+        opacity: 1;
+        justify-content: flex-end;
+        text-shadow: 1px 1px 1px #000;
+        color: black;
+    }
+    .title {
+        margin-bottom: 1em;
+    }
+}
+
+li {
+    color: #eee;
+    font-weight: 400;
+    font-family: DomaineDisplay, Georgia, serif;
+    font-size: 20px;
+}
+
+.interface {
+    margin: 2vw;
+    outline-color: #eee;
+    width: 330px;
+    height: 265px;
+}
+
+.bullet {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.bold {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.expand {
+    background-color: #fff;
+    align-self: flex-end;
+    width: 5%;
+    height: 7%;
+}
+
+.iframe {
+    align-self: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #bbb;
+    line-height: 1.5;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.ft-title {
+    color: #fff;
+    font-family: ’Merriweather’, serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+    margin-bottom: 0vw;
+    padding-left: 1.2rem;
+}
+
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-main-item {
+    padding: 1vw;
+    min-width: 12.5rem/*200px*/
+    ;
+}
+
+@media only screen and (min-width: 29.8125rem
+/*477px*/
+
+) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 77.5rem
+/*1240px*/
+
+) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+    .expand {
+        display: none
+    }
+}
+
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+
+.ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+
+
+/* one before the last child */
+
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+    /* same as flex-grow: 1; */
+}
+
+#headerText {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2vw;
+}
+
+.section-title {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.section-desc {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.section-desc1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.desc {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.screenshot {
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+}
+
+#intro {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.figma {
+    width: 800px;
+    height: 450px;
+}
+
+.adobe {
+    width: 800px;
+    height: 2000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-adobe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.email {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 5vw;
+}
+
+.img1 {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.img2 {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.img3 {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.img4 {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .screenshot {
+        width: 300px;
+        height: 200px;
+    }
+    .figma {
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .adobe {
+        display: none;
+    }
+    .img-adobe {
+        width: 300px;
+        height: 400px;
+    }
+    /* #headerText {
+        margin-left: 150px;
+        margin-right: -100px;
+    } */
+    /* #intro {
+        margin-left: 150px;
+        margin-right: -100px;
+    } */
+    .img1 {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+    .img2 {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+    .img3 {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+    .img4 {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+    .email {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 5vw;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .screenshot {
+        width: 400px;
+        height: 300px;
+    }
+    .figma {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .adobe {
+        display: none;
+    }
+    .img-adobe {
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 50%;
+}
